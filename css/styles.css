@@ -55,3 +55,10 @@ button {
     font-size: xxx-large;
     font-family: math;
 }
+
+/* CSS ini akan di terapkan ketika lebar layar lebih kecil dari 488px */
+@media only screen and (max-width: 488px) {
+    main{
+        flex-direction:column;
+    }
+}
