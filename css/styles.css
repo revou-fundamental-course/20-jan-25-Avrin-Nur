@@ -6,6 +6,13 @@ main {
     padding: 32px;
 }
 
+h1 {
+    background-color: lightcyan;
+}
+body {
+    background-color: lightsteelblue;
+}
+
 .main-header {
     text-align: center
 }
@@ -21,7 +28,12 @@ input[type=number] {
     box-sizing: border-box;
   }
 
-  form {
+article p {
+    text-align: justify;
+    line-height: 1.6; /* Jarak antar baris agar lebih enak dibaca */
+}
+
+form {
     background: cadetblue;
     padding: 32px;
   }
@@ -32,6 +44,25 @@ input[type=number] {
     padding-bottom: 16px;
 }
 
+.gender-group {
+    display: flex;
+    flex-direction: column; /* Label "Jenis Kelamin" tetap di atas */
+    gap: 5px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px; /* Jarak antar radio button */
+    align-items: center;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara radio button dan labelnya */
+}
+
+
 button {
     border: none;
     padding: 8px;
@@ -39,7 +70,7 @@ button {
 }
 
 .bg-green-yellow {
-    background: greenyellow;
+    background: white;
 }
 
 .bg-cornsilk {
@@ -47,14 +78,17 @@ button {
 }
 .result-section {
     text-align: center;
-    background: cadetblue;
+    background: lightcyan;
     padding: 16px;
 }
+
+
 
 #result-bmi {
     font-size: xxx-large;
     font-family: math;
 }
+
 
 /* CSS ini akan di terapkan ketika lebar layar lebih kecil dari 488px */
 @media only screen and (max-width: 488px) {

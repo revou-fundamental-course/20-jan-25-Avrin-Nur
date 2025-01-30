@@ -20,11 +20,27 @@
          <section>
             <!-- Introduction-->
         <article>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae corrupti culpa excepturi cupiditate aliquam eaque, consequuntur accusamus ea rem incidunt, ipsa harum itaque beatae. Impedit deserunt sed distinctio obcaecati.</p>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
         </article>
 
         <!-- Form -->
          <form>
+            <form class="gender-group">
+                <label>Jenis Kelamin:</label>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Laki-laki</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            
             <div class="form-group">
                 <label for="input-berat-badan">Berat Badan (kg)</label>
                <input type="number" id="input-berat-badan" required>
@@ -42,7 +58,7 @@
                 </div>
 
                 <div>
-                    <button class="bg-cornsilk" type="button" onclick="calculateBmi()">Hitung BMI</button>
+                    <button class="bg-cornsilk" type="button" onclick="calculateBMI()">Hitung BMI</button>
                     <button class="bg-green-yellow">Reset</button>
                 </div>
             </div>
@@ -52,9 +68,18 @@
          <!-- Feature Information -->
          <article>
             <header>
-                <h2>Feature Information</h2>
+                <h2>Keunggulan Fitur</h2>
             </header>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae corrupti culpa excepturi cupiditate aliquam eaque, consequuntur accusamus ea rem incidunt, ipsa harum itaque beatae. Impedit deserunt sed distinctio obcaecati.</p>
+            <p>
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+            </p>
+            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                <br>
+            Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².</p>
         </article>
          </section>
 
@@ -66,17 +91,21 @@
 
             <div>
                 <span id="result-bmi">0</span>
+                <p id="bmi-category"></p>
+                <p id="bmi-explanation"></p> <!-- Tempat penjelasan kategori BMI -->
             </div>
             </section>
 
+            <br>
+
             <article>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae corrupti culpa excepturi cupiditate aliquam eaque, consequuntur accusamus ea rem incidunt, ipsa harum itaque beatae. Impedit deserunt sed distinctio obcaecati.</p>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
             </article>
          </section>
     </main>
 
     <footer>
-        <span>Made by Avrin@2025</span>
+        <span>Made by AvrinNur</span>
     </footer>
 
     <script src="js\script.js"></script>
